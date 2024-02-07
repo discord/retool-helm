@@ -284,7 +284,7 @@ spec:
 ---
 {{- if .Values.podDisruptionBudget }}
 {{- if semverCompare ">=1.21-0" .Capabilities.KubeVersion.Version -}}
-apiVersion: policy/v1
+apiVersion: policy/v1beta1
 {{- else -}}
 apiVersion: policy/v1beta1
 {{- end }}
